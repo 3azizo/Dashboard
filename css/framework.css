@@ -1,4 +1,12 @@
-/* start box  */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+/* start box  display + postion + width */
 .p-relative {
   position: relative;
 }
@@ -8,11 +16,19 @@
 .align-center {
   align-items: center;
 }
-
+.w-full {
+  width: 100%;
+}
+.over-hidden {
+  overflow: hidden;
+}
 /* start box  */
-/* padding + margin */
+/* padding + margin + border */
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -29,7 +45,9 @@
 .rad-6 {
   border-radius: 6px;
 }
-
+.rad-10 {
+  border-radius: 10px;
+}
 /* padding + margin */
 /* color   */
 
@@ -40,10 +58,18 @@
   color: black;
 }
 /* color   */
+/* text and font  */
 .txt-c {
   text-align: center;
 }
-
 .fs-14 {
   font-size: 14px;
 }
+/* text and font  */
+/* start components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* end components */
