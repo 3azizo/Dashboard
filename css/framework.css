@@ -13,6 +13,11 @@
 .d-flex {
   display: flex;
 }
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .align-center {
   align-items: center;
 }
@@ -36,6 +41,9 @@
 }
 .w-fit {
   width: fit-content;
+}
+.op {
+  opacity: 50%;
 }
 .over-hidden {
   overflow: hidden;
@@ -70,10 +78,13 @@
   margin-top: 0;
 }
 .mt-5 {
-  margin-top: 0;
+  margin-top: 5px;
 }
 .mt-20 {
   margin-top: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -83,6 +94,9 @@
 }
 .rad-10 {
   border-radius: 10px;
+}
+.b-none {
+  border: none;
 }
 /* padding + margin */
 /* color   */
@@ -96,6 +110,33 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-blue-20 {
+  background-color: rgba(0, 119, 255, 0.2);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-orange-20 {
+  background-color: rgba(245, 159, 11, 0.2);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-green-20 {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.c-green {
+  color: var(--green-color);
+}
+
 .c-white {
   color: #fff;
 }
@@ -118,6 +159,13 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-15 {
+  font-size: 15px;
+}
+.fw-bold {
+  font-weight: bold;
+}
+
 /* text and font  */
 /* start components */
 .between-flex {
@@ -126,5 +174,7 @@
   justify-content: space-between;
 }
 .btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 /* end components */

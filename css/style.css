@@ -217,4 +217,67 @@ img {
   }
 }
 /* welcome */
+/* quick */
+.quick-draft textarea {
+  resize: none;
+  min-height: 180px;
+}
+.quick-draft .save {
+  margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+
+/* quick */
+/* target  */
+.targets .info {
+  flex: 1;
+}
+.targets .icon_container {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+.targets .progress {
+  height: 4px;
+}
+.targets .progress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.targets .progress > span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.targets .progress > span span::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+}
+.targets .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+.targets .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+.targets .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
+/* target  */
 /* Dashboard */
