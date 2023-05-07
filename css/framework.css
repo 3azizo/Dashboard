@@ -13,6 +13,9 @@
 .d-flex {
   display: flex;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 .center-flex {
   display: flex;
   align-items: center;
@@ -83,6 +86,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -143,7 +149,7 @@
 .c-black {
   color: black;
 }
-.c-gray {
+.c-grey {
   color: var(--grey-color);
 }
 /* color   */
@@ -156,11 +162,17 @@
     text-align: center;
   }
 }
-.fs-14 {
+.fs-13 {
+  font-size: 14px;
+}
+.fs-13 {
   font-size: 14px;
 }
 .fs-15 {
   font-size: 15px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fw-bold {
   font-weight: bold;
