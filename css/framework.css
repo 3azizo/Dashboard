@@ -85,6 +85,9 @@
 .pb-20 {
   padding-bottom: 20px;
 }
+.pl-15 {
+  padding-left: 15px;
+}
 .m-0 {
   margin: 0;
 }
@@ -97,6 +100,9 @@
 }
 .mt-5 {
   margin-top: 5px;
+}
+.mt-15 {
+  margin-top: 15px;
 }
 .mt-20 {
   margin-top: 20px;
@@ -113,6 +119,9 @@
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-15 {
+  margin-bottom: 10px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -125,8 +134,17 @@
 .rad-10 {
   border-radius: 10px;
 }
+.rad-half {
+  border-radius: 50%;
+}
 .b-none {
   border: none;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
 }
 /* padding + margin */
 /* color   */
@@ -167,6 +185,9 @@
   color: var(--green-color);
 }
 
+.bg-red {
+  background-color: var(--red-color);
+}
 .c-white {
   color: #fff;
 }
@@ -201,7 +222,6 @@
 .fw-bold {
   font-weight: bold;
 }
-
 /* text and font  */
 /* start components */
 .between-flex {

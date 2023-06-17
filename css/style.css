@@ -28,7 +28,8 @@
   background-color: var(--blue-color);
 }
 body {
-  font-family: "open", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -293,6 +294,12 @@ img {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
+@media (max-width: 768px) {
+  .latest .news-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .latest .news-row img {
   width: 100px;
   border-radius: 6px;
@@ -331,4 +338,216 @@ img {
   min-height: 140px;
 }
 /* latest Post  */
+/* progress  */
+.progress-list::before,
+.progress-list li::after {
+  content: "";
+  position: absolute;
+}
+.progress-list::before {
+  background-color: var(--blue-color);
+  width: 5px;
+  height: 85%;
+  top: 20px;
+  left: 0;
+}
+.progress-list li::after {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  outline: 2px solid var(--blue-color);
+}
+.progress-list .done::after {
+  background-color: var(--blue-color);
+}
+.in-progress::after {
+  animation: fide-In 2s infinite ease;
+}
+@keyframes fide-In {
+  0%,
+  100% {
+    background-color: var(--blue-color);
+  }
+  50% {
+    background-color: #fff;
+  }
+}
+/* progress  */
+.launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+/* reminder */
+.remider-row {
+  flex-direction: column;
+}
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+.reminders ul li > .blue {
+  border-left: 2px solid var(--blue-color);
+}
+.reminders ul li > .green {
+  border-left: 2px solid var(--green-color);
+}
+.reminders ul li > .orange {
+  border-left: 2px solid var(--orange-color);
+}
+.reminders ul li > .red {
+  border-left: 2px solid var(--red-color);
+}
+/* reminder */
+/* social */
+
+.social .box {
+  padding-left: 70px;
+}
+.social .box i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social .box i:hover {
+  transform: rotate(10deg);
+}
+.social .twitter {
+  background-color: rgb(29 161 242 / 20%);
+  color: #1da1f2;
+}
+
+.social .twitter i,
+.social .twitter a {
+  background-color: #1da1f2;
+}
+.social .facebook {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1da1f2;
+}
+
+.social .facebook i,
+.social .facebook a {
+  background-color: #1877f2;
+}
+.social .youtube {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+
+.social .youtube i,
+.social .youtube a {
+  background-color: #ff0000;
+}
+.social .linkedin {
+  background-color: rgb(0 119 181 / 20%);
+  color: #0077b5;
+}
+
+.social .linkedin i,
+.social .linkedin a {
+  background-color: #0077b5;
+}
+/* social */
+/* project */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.projects thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.projects table td {
+  padding: 15px;
+}
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.projects tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects tbody tr td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+/* project */
+/* settings */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.settings-page .close-message {
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 150px;
+}
+.toggle-checkbox {
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: #aaa;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-alt-color);
+}
+/* settings */
 /* Dashboard */
