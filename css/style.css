@@ -591,5 +591,107 @@ img {
   left: 50px;
   color: var(--blue-alt-color);
 }
+.control label,
+.backup-control .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.control label::before,
+.control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+.control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+}
+.control label:hover::before {
+  border-color: var(--blue-color);
+}
+.control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 12px;
+  background-color: var(--blue-color);
+  color: white;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.3s;
+}
+.control input[type="checkbox"] {
+  appearance: none;
+}
+.control input[type="checkbox"]:checked + label::after {
+  transform: scale(1) rotate(1turn);
+}
+/* backup-control */
+.backup-control input[type="radio"] {
+  appearance: none;
+}
+
+.backup-control .date label::after,
+.backup-control .date label::before {
+  content: "";
+  position: absolute;
+  margin-top: -11px;
+  border-radius: 50%;
+}
+.backup-control .date label::before {
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  border: 2px solid var(--grey-color);
+}
+.backup-control .date label::after {
+  height: 12px;
+  width: 12px;
+  left: 5px;
+  bottom: 5px;
+  background-color: var(--blue-color);
+  transition: 0.5s;
+  transform: scale(0);
+}
+.backup-control .date input[type="radio"]:checked + label::before {
+  border-color: var(--blue-alt-color);
+}
+.backup-control .date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+.backup-control .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.backup-control .servers i {
+  display: block !important;
+}
+@media (max-width: 767px) {
+  .backup-control .servers {
+    flex-wrap: wrap;
+  }
+}
+.backup-control .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+  transition: 0.3s;
+}
+.backup-control .servers .server label {
+  cursor: pointer;
+}
+.backup-control .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
 /* settings */
 /* Dashboard */

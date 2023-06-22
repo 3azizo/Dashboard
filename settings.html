@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -183,11 +183,10 @@
                 <div class="  p-20 bg-white rad-10">
                     <h2 class="mt-0 mb-10">Widgets Control</h2>
                     <p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
-                </div>
-                <!--Backup Manger -->
-                <div class="  p-20 bg-white rad-10">
-                    <h2 class="mt-0 mb-10">Backup Manager</h2>
-                    <p class="mt-0 mb-20 c-grey fs-15">Control Backup Time And Location</p>
+                    <div class="control d-flex align-center mb-15">
+                        <input type="checkbox" id="two" checked />
+                        <label for="two">Quik Draft</label>
+                    </div>
                     <div class="control d-flex align-center mb-15">
                         <input type="checkbox" id="two" checked />
                         <label for="two">Yearly Targets</label>
@@ -207,6 +206,50 @@
                     <div class="control d-flex align-center mb-15">
                         <input type="checkbox" id="six" checked />
                         <label for="six">Top Search Items</label>
+                    </div>
+                </div>
+                <!--Backup Manger -->
+                <div class=" backup-control p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Backup Manager</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Control Backup Time And Location</p>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="daily" checked />
+                        <label for="daily">Daily</label>
+                    </div>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="weekly" />
+                        <label for="weekly">Weekly</label>
+                    </div>
+                    <div class="date d-flex align-center mb-15">
+                        <input type="radio" name="time" id="monthly" />
+                        <label for="monthly">monthly</label>
+                    </div>
+                    <div class="servers d-flex align-center txt-c">
+
+                        <input type="radio" name="severs" id="server-one">
+                        <div class="server m-10 rad-10 w-full">
+                            <label class="d-block m-15" for="server-one">
+                                <i class="fs-solid fas fa-server d-block mb-10"></i>
+                                Megaman
+                            </label>
+                        </div>
+
+                        <input type="radio" name="severs" id="server-two" checked>
+                        <div class="server m-10 rad-10 w-full">
+                            <label class="d-block m-15" for="server-two">
+                                <i class="fs-solid fas fa-server d-block mb-10"></i>
+                                Zero
+                            </label>
+                        </div>
+
+                        <input type="radio" name="severs" id="server-three">
+                        <div class="server m-10 rad-10 w-full">
+                            <label class="d-block m-15" for="server-three">
+                                <i class="fs-solid fas fa-server d-block mb-10"></i>
+                                Sigma
+                            </label>
+                        </div>
+
                     </div>
                 </div>
 
