@@ -10,6 +10,9 @@
 .p-relative {
   position: relative;
 }
+.p-absolute {
+  position: absolute;
+}
 .d-flex {
   display: flex;
 }
@@ -39,6 +42,16 @@
 .d-block {
   display: block;
 }
+.h-full {
+  height: 100px;
+}
+.h-full {
+  height: 100%;
+}
+.w-100 {
+  width: 100px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -149,12 +162,10 @@
 .border-ccc {
   border: 1px solid #ccc;
 }
-.h-full {
-  height: 100%;
+.border-eee {
+  border: 1px solid #eee;
 }
-.w-full {
-  width: 100%;
-}
+
 /* padding + margin */
 /* color   */
 
@@ -199,6 +210,9 @@
 
 .bg-red {
   background-color: var(--red-color);
+}
+.c-red {
+  color: var(--red-color);
 }
 .c-white {
   color: #fff;
