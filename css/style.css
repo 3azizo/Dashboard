@@ -694,4 +694,122 @@ img {
   color: var(--blue-color);
 }
 /* settings */
+/* start profile page */
+@media (max-width: 767px) {
+  .Profile-page .overview {
+    flex-direction: column;
+  }
+}
+.Profile-page .avatar-box {
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .Profile-page .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.Profile-page .avatar-box > img {
+  width: 120px;
+}
+.Profile-page .level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+.Profile-page .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+}
+.Profile-page .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.Profile-page .info-box .box:hover {
+  background-color: #f9f9f9;
+}
+.Profile-page .info-box .box > div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+.info-box .toggle-switch {
+  height: 20px;
+}
+.info-box .toggle-switch::before {
+  height: 12px;
+  width: 12px;
+  font-size: 8px;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  left: 62px;
+}
+@media (max-width: 767px) {
+  .Profile-page .other-data {
+    flex-direction: column;
+  }
+}
+.Profile-page .skills-card {
+  flex-grow: 1;
+}
+.Profile-page .activities {
+  flex-grow: 2;
+}
+@media (max-width: 767px) {
+  .info-box .toggle-switch {
+    margin: auto;
+  }
+}
+/* skills card  */
+.Profile-page .skills-card ul li {
+  padding: 15px 0;
+}
+.Profile-page .skills-card ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.Profile-page .skills-card ul li span {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.Profile-page .skills-card ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+.Profile-page .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.Profile-page .activity img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .Profile-page .activity .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .Profile-page .activity {
+    flex-direction: column;
+  }
+  .Profile-page .activity img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .Profile-page .activity .date {
+    margin-top: 15px;
+  }
+}
+/* skills card  */
+/* end profile page */
 /* Dashboard */

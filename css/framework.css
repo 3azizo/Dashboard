@@ -234,6 +234,9 @@
 .fw-bold {
   font-weight: bold;
 }
+.f-normal {
+  font-weight: normal;
+}
 /* text and font  */
 /* start components */
 .between-flex {
